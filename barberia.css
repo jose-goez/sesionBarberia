@@ -1,0 +1,51 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.caja1 {
+  width: 80px;
+  height: 80px;
+  background-color: aqua;
+}
+
+.animacion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (230px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 230px);
+  gap: 40px;
+  padding: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.animacion-caja {
+  background: #ee0c0c;
+  width: 230px;
+  height: 400px;
+}
+
+.animacion1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (230px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 230px);
+  gap: 40px;
+  padding: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.animacion-caja1 {
+  background: #5703f1;
+  width: 230px;
+  height: 400px;
+}
+/*# sourceMappingURL=barberia.css.map */

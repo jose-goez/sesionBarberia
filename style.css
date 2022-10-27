@@ -1,0 +1,104 @@
+@font-face {
+  font-family: cursiva;
+  src: url(letraPegada.ttf);
+}
+
+@font-face {
+  font-family: italica;
+  src: url(italica.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, white), color-stop(50%, black), to(black));
+  background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+}
+
+body, html {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header span {
+  color: #726868;
+  font-size: 35px;
+  font-family: cursiva;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: bolder;
+  margin: 9px;
+  text-transform: capitalize;
+  color: #f01111;
+  padding: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 5px;
+}
+
+.header a:hover {
+  background-color: #726868;
+  color: black;
+  border-radius: 30px;
+}
+
+.container1 {
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, white), color-stop(50%, black), to(black));
+  background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container1 a {
+  text-decoration: none;
+  font-weight: bolder;
+  margin: 9px;
+  text-transform: capitalize;
+  color: #f01111;
+  padding: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container1 a:hover {
+  background-color: #726868;
+  color: black;
+  border-radius: 30px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,98 @@
+@font-face{
+    font-family: cursiva;
+    src:url(letraPegada.ttf)
+}
+@font-face{
+    font-family: italica;
+    src:url(italica.ttf)
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@mixin boton {
+    text-decoration: none;
+        font-weight: bolder;
+        margin: 9px;
+        text-transform: capitalize;
+        color: rgb(240, 17, 17);
+        padding: 5px;
+        transition: 0.5s;
+}
+
+@mixin hover1{
+    background-color: rgb(114, 104, 104);
+    color:black;
+    border-radius: 30px;
+}
+
+@mixin fondo{
+    background: linear-gradient(
+        to right,
+        white 0%,
+        white 50%,
+
+        black 50%,
+        black 100%
+
+    );
+}
+body{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    @include fondo();
+}
+
+body, html{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.header{
+    @include flex;
+    // background: linear-gradient(
+    //     to right,
+    //     white 0%,
+    //     white 50%,
+
+    //     black 50%,
+    //     black 100%
+    // );
+    span{
+        color: rgb(114, 104, 104);
+        font-size: 35px;
+        font-family:cursiva ;
+    }
+    a{
+        @include boton();
+        letter-spacing: 5px;
+    }
+    a:hover{
+      @include hover1();
+    }
+
+}
+
+.container1{
+    @include fondo();
+    @include flex;
+    // justify-content: space-evenly;
+//    position: absolute;
+    a{
+        @include boton();
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    a:hover{
+        @include hover1();
+    }
+
+}
